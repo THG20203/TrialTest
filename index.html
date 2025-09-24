@@ -2,17 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Trial</title>
-    <link rel="stylesheet" href="public/css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Trial - Wildlife Grid</title>
+    <link rel="stylesheet" href="public/css/app.css" />
 </head>
 <body>
-    <h1 class="text-brand-500">Gallery</h1>
-    <div>Hill Ironworks Cambridge</div>
+<header class="w-full">
+    <nav class="flex items-center justify-between px-4 sm:px-6 lg:px-8 h-20 bg-white">
+        <!-- Logo -->
+        <a href="https://www.icandydesign.com/" class="shrink-0 brightness-0">
+            <img src="images/ICD.svg" alt="icandy" class="h-12 w-auto">
+        </a>
 
-    <button>Discover Our Gallery</button>
+        <!-- Desktop nav -->
+        <div class="hidden md:flex items-center gap-8 ml-auto text-ink">
+            <a href="/our-work" class="text-md font-medium hover:opacity-80">Our Work</a>
+            <a href="/about" class="text-md font-medium hover:opacity-80">About</a>
+            <a href="/news" class="text-md font-medium hover:opacity-80">News</a>
+            <a href="/team" class="text-md font-medium hover:opacity-80">Team</a>
+            <a class="btn bg-brand-500 text-white" href="#contact">Contact</a>
+        </div>
 
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Burger -->
+        <button
+                id="menuToggle"
+                type="button"
+                class="md:hidden inline-flex items-center justify-center cursor-pointer"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                aria-label="Toggle navigation"
+        >
+            <span class="sr-only">Open main menu</span>
+            <span class="flex flex-col gap-1.5">
+        <span class="block h-0.5 w-6 bg-black"></span>
+        <span class="block h-0.5 w-6 bg-black"></span>
+        <span class="block h-0.5 w-6 bg-black"></span>
+      </span>
+        </button>
+    </nav>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div
+            id="mobile-menu"
+            class="hidden md:hidden bg-white"
+    >
+        <div class="px-4 py-4 space-y-2 text-ink">
+            <a href="/our-work" class="block px-2 py-2 rounded hover:bg-gray-50">Our Work</a>
+            <a href="/about" class="block px-2 py-2 rounded hover:bg-gray-50">About</a>
+            <a href="/news" class="block px-2 py-2 rounded hover:bg-gray-50">News</a>
+            <a href="/team" class="block px-2 py-2 rounded hover:bg-gray-50">Team</a>
+            <a href="#contact" class="btn bg-brand-500 text-white">Contact</a>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN CONTENT (max-width: 1610px) -->
+<main class="content-wrap py-18">
+    <div class="flex items-center justify-between">
+        <h1 class="uppercase">Gallery</h1>
+        <div class="hidden md:flex items-start gap-3">
+            <a class="btn bg-brand-500" href="#">Discover Our Gallery</a>
+        </div>
+    </div>
+
+
+    <div class="py-8 md:py-18">
+        <!-- Breadcrumbs -->
+        <nav aria-label="Breadcrumb" class="hidden md:flex text-md text-white py-4">
+            <ol class="flex items-center gap-2">
+                <li>
+                    <a href="/gallery" class="text-white">Gallery</a>
+                </li>
+                <li class="text-white">|</li>
+                <li>
+                    <a href="/gallery/category" class="text-white">Category</a>
+                </li>
+                <li class="text-white">|</li>
+                <li class="text-yellow-500 font-medium">Subcategory</li>
+            </ol>
+        </nav>
+        <div class="grid grid-cols-1 md:[grid-template-columns:1fr_50%_1fr] gap-2 md:gap-4">
+            <!-- Lion: top-left -->
+            <div class="tile overflow-hidden md:col-start-1 md:row-start-1">
+                <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 md:h-60 object-cover">
+            </div>
+
+            <!-- Flamingos: below lion (same column, next row) -->
+            <div class="tile overflow-hidden md:col-start-1 md:row-start-2">
+                <img src="images/Flamingos.jpg" alt="Flamingos" class="w-full h-64 md:h-60 object-cover">
+            </div>
+
+            <!-- Elephant spans 2 rows (col 2, rows 1–2) -->
+            <div class="tile overflow-hidden md:col-start-2 md:row-start-1 md:row-span-2">
+                <img src="images/Elephant.jpg" alt="Elephant" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Giraffes spans 2 rows (col 3, rows 1–2) -->
+            <div class="tile overflow-hidden md:col-start-3 md:row-start-1 md:row-span-2">
+                <img src="images/Giraffes.jpg" alt="Giraffes" class="h-[70vh] md:h-full w-full object-cover">
+            </div>
+        </div>
+    </div>
+
+<!-- Mobile Button -->
+    <div class="flex md:hidden items-end justify-end w-full gap-3">
+        <a class="btn bg-brand-500" href="#">Discover Our Gallery</a>
+    </div>
+</main>
+
+<!-- Jquery and javascript -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+<script src="js/nav.js" defer></script>
 </body>
 </html>

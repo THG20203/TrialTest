@@ -1,5 +1,84 @@
+/* app.css */
 @import "tailwindcss";
 
 @theme {
-    --color-brand-500: #4f46e5;
+    --font-heading: "Oswald", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+
+    --color-brand-500: #F6B600;
+    --color-ink: #151515;
+}
+
+:root { color-scheme: dark; }
+
+body { @apply bg-ink text-white font-body; }
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-white;
+    font-weight: 300;
+}
+
+a .btn {
+    @apply font-body text-ink;
+}
+
+h1 {
+    position: relative;
+    font-size: 50px;
+    @media screen and (min-width: 768px) {
+        font-size: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 70px;
+    }
+    line-height: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        padding-right: 10px;
+        right: 110%;
+        width: 100vw;
+        height: 2px;
+        background: var(--color-brand-500);
+        pointer-events: none;
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
+}
+
+.btn {
+    @apply inline-flex items-center justify-center px-6 py-2;
+    color: #151515;
+    background: var(--color-brand-500);
+}
+.btn:hover { filter: brightness(0.95); }
+
+/* navbar */
+.navbar {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* actual content */
+.content-wrap {
+    max-width: 1610px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .content-wrap {
+        padding: 20px;
+    }
 }
