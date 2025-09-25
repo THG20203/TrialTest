@@ -80,6 +80,7 @@ h3 {
     @apply inline-flex items-center justify-center px-10 py-2;
     color: #151515;
     background: var(--color-brand-500);
+    transition: background-color 0.4s ease, color 0.4s ease, filter 0.4s ease, border-color 0.4s ease;
 }
 .btn:hover { filter: brightness(0.95); }
 
@@ -89,6 +90,7 @@ h3 {
     background: var(--color-ink);
     text-transform: uppercase;
     border: 1px solid var(--color-brand-500);
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 .alternative-btn:hover {
     background: var(--color-brand-500);
@@ -161,6 +163,7 @@ h3 {
 
 .svg-arrow {
     color: var(--color-brand-500);
+    transition: color 0.4s ease;
 }
 
 .svg-arrow:hover {
