@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Trial - Wildlife Grid</title>
     <link rel="stylesheet" href="public/css/app.css" />
+    <!-- Swiper.js - 'CSS' -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <header class="w-full">
@@ -57,7 +62,7 @@
 </header>
 
 <!-- MAIN CONTENT (max-width: 1610px) -->
-<main class="content-wrap py-18">
+<main class="content-wrap my-10 md:my-12 lg:my-18">
     <div class="flex items-center justify-between">
         <h1 class="uppercase">Gallery</h1>
         <div class="hidden md:flex items-start gap-3">
@@ -66,7 +71,7 @@
     </div>
 
 
-    <div class="py-8 md:py-18">
+    <div class="pt-8 md:pt-18">
         <!-- Breadcrumbs -->
         <nav aria-label="Breadcrumb" class="hidden md:flex text-md text-white py-4">
             <ol class="flex items-center gap-2">
@@ -104,14 +109,186 @@
         </div>
     </div>
 
-<!-- Mobile Button -->
-    <div class="flex md:hidden items-end justify-end w-full gap-3">
+    <!-- Mobile Button -->
+    <div class="flex md:hidden items-end justify-end w-full gap-3 my-6">
         <a class="btn bg-brand-500" href="#">Discover Our Gallery</a>
     </div>
 </main>
 
+<!-- FEATURED ITEMS SLICE -->
+<div class="content-wrap my-10 md:my-12 lg:my-18">
+    <div>
+        <h2 class="uppercase">FEATURED ITEM SLICE</h2>
+    </div>
+
+    <!-- Text and Button -->
+    <div class="flex flex-col xl:flex-row items-start justify-between py-8 md:py-10 lg:py-12">
+        <p class="max-w-[1100px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="items-start gap-3">
+            <a class="my-6 xl:my-0 btn bg-brand-500 uppercase" href="#">VIEW ALL</a>
+        </div>
+    </div>
+
+    <!-- Mobile swiper.js -->
+    <div class="xl:hidden">
+        <div class="swiper js-featured-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="tile overflow-hidden flex flex-col">
+                        <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+                        <h3 class="my-6">Featured Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="mt-6">
+                        <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                            Find Out More
+                            <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="tile overflow-hidden flex flex-col">
+                        <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+                        <h3 class="my-6">Featured Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="mt-6">
+                            <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                                Find Out More
+                                <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="tile overflow-hidden flex flex-col">
+                        <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+                        <h3 class="my-6">Featured Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="mt-6">
+                            <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                                Find Out More
+                                <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="tile overflow-hidden flex flex-col">
+                        <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+                        <h3 class="my-6">Featured Item Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="mt-6">
+                            <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                                Find Out More
+                                <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper slider controls -->
+            <div class="swiper-pagination mt-10"></div>
+        </div>
+    </div>
+
+    <!-- Column Section -->
+    <div class="hidden xl:grid xl:grid-cols-4 gap-6">
+        <!-- Column 1 -->
+        <div class="tile overflow-hidden flex flex-col">
+            <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+            <h3 class="my-6">Featured Item Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="mt-6">
+                <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                    Find Out More
+                    <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="tile overflow-hidden flex flex-col">
+            <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+            <h3 class="my-6">Featured Item Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="mt-6">
+                <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                    Find Out More
+                    <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="tile overflow-hidden flex flex-col">
+            <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+            <h3 class="my-6">Featured Item Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="mt-6">
+                <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                    Find Out More
+                    <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="tile overflow-hidden flex flex-col">
+            <img src="images/Lion.jpg" alt="Lion" class="w-full h-64 object-cover">
+            <h3 class="my-6">Featured Item Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="mt-6">
+                <a href="#" class="self-start alternative-btn inline-flex items-center gap-2">
+                    Find Out More
+                    <svg class="w-6 h-6 svg-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- IMAGE & TEXT SLICE -->
+<div class="content-wrap my-10 md:my-12 lg:my-18">
+    <div>
+        <h2 class="uppercase">IMAGE & TEXT SLICE</h2>
+        <div class="py-8 md:py-10 lg:py-12">
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="mt-6 btn bg-brand-500 uppercase" href="#">FIND OUT MORE</a>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
 <!-- Jquery and javascript -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
 <script src="js/nav.js" defer></script>
+<script src="js/swiper.js" defer></script>
 </body>
 </html>
