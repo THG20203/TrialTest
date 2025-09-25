@@ -273,12 +273,34 @@
 
 <!-- IMAGE & TEXT SLICE -->
 <div class="content-wrap my-10 md:my-12 lg:my-18">
-    <div>
-        <h2 class="uppercase">IMAGE & TEXT SLICE</h2>
-        <div class="py-8 md:py-10 lg:py-12">
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="mt-6 btn bg-brand-500 uppercase" href="#">FIND OUT MORE</a>
+    <div class="flex flex-col lg:flex-row lg:items-stretch lg:gap-10">
+        <!-- Text column -->
+        <div class="lg:w-1/2">
+            <h2 class="uppercase">IMAGE & TEXT SLICE</h2>
+            <div class="py-8 md:py-10 lg:py-12">
+                <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="mt-6 btn bg-brand-500 uppercase inline-block" href="#">FIND OUT MORE</a>
+            </div>
+        </div>
+
+        <!-- Image column (right on desktop) -->
+        <div class="lg:w-1/2 mt-6 lg:mt-0">
+            <div class="relative w-full h-64 md:h-full min-h-[280px] md:min-h-[420px]">
+                <img
+                        src="images/Elephant.jpg"
+                        alt="Elephant"
+                        class="absolute inset-0 w-full h-full object-cover"
+                />
+            </div>
         </div>
     </div>
 </div>
